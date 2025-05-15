@@ -4,7 +4,6 @@ groq==0.4.2
 streamlit-webrtc
 audio-recorder-streamlit
 dotenv
-agentic-patterns
 python-docx
 pypdf
 langchain_community
