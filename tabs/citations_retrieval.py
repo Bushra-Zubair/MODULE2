@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Citations Retrieval Tab for Wakeel App
+
+This module provides a chat interface for lawyers to ask questions and provides relevant statutes, 
+case law citations, and brief summaries in response
+
+Created on Wed May 14 15:10:58 2025
+@author: amna
+"""
+
+
 import os
 import streamlit as st
 from langchain_community.document_loaders import TextLoader
