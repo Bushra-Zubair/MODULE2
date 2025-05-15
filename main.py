@@ -13,13 +13,17 @@ from openai import OpenAI
 from tabs import legal_consulting, petition_drafting, citations_retrieval
 
 def main():
+    
     # 1. Page config
     st.set_page_config(page_title="Wakeel | وکیل", layout="centered")
     st.title("Wakeel || وکیل")
+    
 
     # 2. OpenAI client (read key from secrets/env)
     api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
     client  = OpenAI(api_key=api_key)
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_KEY"]
+
 
     # 3. Session defaults
     if "openai_model" not in st.session_state:
