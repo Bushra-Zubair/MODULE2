@@ -12,3 +12,4 @@ langchain_openai
 chromadb
 PyPDF2
 sentence-transformers
+langchain-groq
