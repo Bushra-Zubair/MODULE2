@@ -6,3 +6,9 @@ audio-recorder-streamlit
 dotenv
 agentic-patterns
 python-docx
+pypdf
+langchain_community
+langchain_openai
+chromadb
+PyPDF2
+sentence-transformers
