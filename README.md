@@ -23,11 +23,11 @@ wakeel/
 ├── requirements.txt               # Dependencies
 ├── tabs/
 │   ├── __init__.py                # Imports tab modules
-│   ├── legal_consulting.py        # Chat interface using finetuned OpenAI model
-│   ├── petition_drafting.py       # Petition drafting with Groq LLM
-│   └── citations_retrieval.py     # RAG pipeline using Chroma and Groq
+│   ├── legal_consulting.py        # Chat interface using finetuned OpenAI model ("ft:gpt-4o-2024-08-06:iml-research:wakeel:BW4oryHJ")
+│   ├── petition_drafting.py       # Petition drafting with Groq LLM (llama3-70b-8192)
+│   └── citations_retrieval.py     # RAG pipeline using OpenAI Embeddings,Chroma DB, and Groq LLM (llama3-70b-8192)
 ├── data/
-│   └── RAGdata.txt                # Source data used in citation retrieval (not included)
+│   └── RAGdata.txt                # Source data used in citation retrieval
 └── .streamlit/
     └── secrets.toml               # API keys (ignored by Git)
 ```
