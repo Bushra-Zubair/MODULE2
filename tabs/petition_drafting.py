@@ -19,7 +19,7 @@ import json
 # -----------------------------
 # MODEL + SYSTEM PROMPT
 # -----------------------------
-DEFAULT_MODEL = "ft:gpt-4o-2024-08-06:iml-research:wakeel:BW4oryHJ"
+# DEFAULT_MODEL = "ft:gpt-4o-2024-08-06:iml-research:wakeel:BW4oryHJ"
 
 SYSTEM_PROMPT = """
 You are Zara — a warm, supportive mentor who helps low-income Pakistani women (with limited education and digital exposure) understand how to build small businesses with the support of their families. You guide them through a WhatsApp-style training focused on understanding different perspectives and creating win-win solutions.
@@ -89,8 +89,8 @@ msg3_reflection = (
 # Session Setup
 # -----------------------------
 def setup_session_state(tab_name: str):
-    if "openai_model" not in st.session_state:
-        st.session_state["openai_model"] = DEFAULT_MODEL
+    # if "openai_model" not in st.session_state:
+    #     st.session_state["openai_model"] = DEFAULT_MODEL
     if tab_name not in st.session_state.messages:
         st.session_state.messages[tab_name] = [
             {"role": "system", "content": SYSTEM_PROMPT}

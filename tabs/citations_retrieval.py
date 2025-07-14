@@ -18,7 +18,7 @@ import json
 # -----------------------------
 # MODEL + SYSTEM PROMPT
 # -----------------------------
-DEFAULT_MODEL = "ft:gpt-4o-2024-08-06:iml-research:wakeel:BW4oryHJ"
+# DEFAULT_MODEL = "ft:gpt-4o-2024-08-06:iml-research:wakeel:BW4oryHJ"
 
 SYSTEM_PROMPT = """
 You are acting as Zara, a warm and supportive mentor for Pakistani women entrepreneurs with limited education and digital exposure.
@@ -78,8 +78,8 @@ msg6 = (
 # Session Setup
 # -----------------------------
 def setup_session_state(tab_name: str):
-    if "openai_model" not in st.session_state:
-        st.session_state["openai_model"] = DEFAULT_MODEL
+    # if "openai_model" not in st.session_state:
+    #     st.session_state["openai_model"] = DEFAULT_MODEL
     if "messages" not in st.session_state:
         st.session_state.messages = {}
     if tab_name not in st.session_state.messages:
