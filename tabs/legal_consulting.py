@@ -50,7 +50,7 @@ msg1 = (
     "2 - Not yet"
 )
 
-msg2_yes = "Wonderful! Write your I that you used in real life. I’ll look at it with you."
+msg2_yes = "Wonderful! Write your I statement that you used in real life. I’ll look at it with you."
 
 msg2_no = (
     "No worries! Let’s try one together now.\n\n"

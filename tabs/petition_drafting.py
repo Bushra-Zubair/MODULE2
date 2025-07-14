@@ -54,6 +54,7 @@ msg1 = (
 
 msg2_yes = (
     "Amazing! What was important to YOU in that situation?\n"
+    "For example, maybe you wanted to feel heard, or it was really important to stick to a plan you'd agreed on.\n"
     "Please write it right here in the chat so we can look at it together."
 )
 
@@ -67,6 +68,7 @@ msg2_no = (
 msg3_partner_intro = (
     "Now let's think about the other person.\n"
     "**What do you think their interest was in that situation?**\n\n"
+    "**Example**: If your partner or your parents get upset about spending, maybe they're worried about having enough money for emergencies.\n\n"
     "1 - I think I know!\n"
     "2 - I'm not sure"
 )
@@ -287,13 +289,14 @@ Respond ONLY in JSON format like this:
                     reflection_prompt = f"""
 The user shared:
 - Their interest: {st.session_state.user_interest}
-- Partner's interest: {st.session_state.partner_interest}
+- Other person's interest: {st.session_state.partner_interest}
 
 Give them a final reflection that:
 1. Acknowledges both perspectives
 2. Shows how understanding both sides helps find solutions DONT LET THEM BE LITTLE THE OTHER PERSON PEREPSCTIVE ; MAKE THEM FEEL LIKE THEY ARE BOTH ON THE SAME TEAM
 3. Gives them encouragement for practicing this skill
-4. Provides a brief example of how this could lead to a win-win solution
+4. Provides a brief example of how this could lead to a win-win solution and relate it to their situation dont just give any random example
+5. MAke them understand the other person perspective that they mentioned what the other persons interest was and how it can help them in the future
 
 Keep it warm, supportive, and under 4 lines.
                     """
