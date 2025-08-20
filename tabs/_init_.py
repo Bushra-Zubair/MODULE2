@@ -7,6 +7,6 @@ Created on Wed May 14 15:18:33 2025
 """
 
 # tabs/__init__.py
-from .I_WE import render as I_WE
-from .partners_interest import render as partners_interest
-from .general_flow import render as general_flow
+from .quiz import render as quiz
+from .solutions import render as solutions
+from .identifying_stressors import render as identifying_stressors

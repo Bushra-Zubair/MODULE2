@@ -10,11 +10,11 @@ import streamlit as st
 from openai import OpenAI
 
 # Keep original tab modules (so no import error)
-from tabs import I_WE, partners_interest, general_flow
+from tabs import quiz, solutions, identifying_stressors
 
 def main():
     st.set_page_config(page_title="Zara | زارا", layout="centered")
-    st.title("Zara || زارا - Family Support Assistant")
+    st.title("Zara || زارا - Stress Management Assistant")
 
     # OpenAI API initialization
     try:
@@ -44,9 +44,9 @@ def main():
 
     # Sidebar options mapped to original tab modules, but with your new labels
     label_map = {
-        "Understanding Your Partner’s Interests/Communication Help ": partners_interest,
-        "‘I We’ Statements ": I_WE,
-        "General Flow ": general_flow
+        "Learning strategies for reducing stress ": solutions,
+        "‘Quiz Time ": quiz,
+        "Identifying Stressors": identifying_stressors
     }
 
     choice = st.radio("Which topic do you want to try first?", list(label_map.keys()))
